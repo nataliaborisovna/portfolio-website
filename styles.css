@@ -230,6 +230,11 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+.portfolio h2 {
+  color: rgba(21, 2, 74);
+ }
+
 .toggle-btn {
   display: none; /* Hide toggle button by default */
 }
@@ -473,21 +478,25 @@ h2 {
    }
 
   .statement {
-    margin-left: 40px;
-    margin-top: 20px;
+    display: none;
   }
 
   .skills {
-    display: none;
+    text-align: left;
+    margin: 10px 20px 0px;
   }
 
  .footer p {
     font-size: 12px;
   }
 
-  body, html {
-    
-    background-color: rgba(21, 2, 74);
-}
+ .portfolio {
+  margin: 0px 20px;
+ }
+
+ .overlay-text {
+  margin-left: 0;
+  font-size: 32px;
+ }
 
 }
