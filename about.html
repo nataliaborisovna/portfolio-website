@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+  <header >
+    <div class="navbar" style="z-index: 50;">
+      <div class="nav-left">
+        <a href="index.html" class="brand-name">N<span class="brand-name-dot">.</span><span class="brand-name-lastname">Low</span></a>
+      </div>
+            
+      <div class="nav-right">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+            
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i> 
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href=".contact.html">Contact</a></li>
+      </div>
+
+    </div>
+  </header>
+
+
+  <section class="portfolio">
+
+  <div class="objective-container">
+    <div>
+      <h3>Summary</h3>
+  
+      <p>Dynamic and innovative UX Design and Research professional with a solid foundation in human-computer interaction, psychology, and a diverse set of design tools including Sketch, Adobe XD, and Figma. Proficient at conducting comprehensive user research, usability testing, and crafting intuitive user interfaces. With a background in Computer Information Systems and Architecture, I bring a unique blend of technical expertise, creative design, and strategic thinking to every project. </p>
+      
+      <h4>Competitor Analysis:</h4>
+      <p><strong>Method:</strong> Reviewed existing range finder apps and laser-based tools on the market.</p>
+      <p><strong>Key Findings:</strong></p>
+      <ul>
+        <li>There is no app, aiming to use the same technology. Because the product will be unique, there might be UX/UI solutions never used before.</li>
+        <li>Most apps lacked intuitive interfaces, making it difficult for users to understand the process and measurements.</li>
+        <li>Few competitors incorporated augmented reality, which could enhance precision and user trust.</li>
+      </ul>
+
+      <p>
+        "Design of Everyday Things" by Don Norman
+        "About Face: The Essentials of Interaction Design" by Alan Cooper, Robert Reimann, David Cronin, and Christopher Noessel
+
+      </p>
+
+      <p>
+        Human-Centered Design: an Introduction. Stanford University 
+        Positive Psychology Harvard Open Course
+        Human Computer Interaction, Politecnico di Torino, year 2022/2023
+
+      </p>
+      <p>
+        Alan Cooper
+
+      </p>
+
+  
+    </section>
+  
+
+
+  <!--<div class="back-to-top-container">
+  <a href="#" id="back-to-top" title="Back to Top">&#8679;</a>
+  </div>-->
+
+  <footer class="footer">
+    <p>Copyright &copy; 2024, Natalia Low</p>
+  </footer>
+
+</div>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn');
+    const toggleBtnIcon = document.querySelector('.toggle-btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open');
+      const isOpen = dropDownMenu.classList.contains('open');
+
+      toggleBtnIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    }
+  </script>
+</body>
+

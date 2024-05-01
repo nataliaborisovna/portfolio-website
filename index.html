@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NataliaLowWebsite</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+  <header >
+    <div class="navbar" style="z-index: 50;">
+      <div class="nav-left">
+        <a href="index.html" class="brand-name">N<span class="brand-name-dot">.</span><span class="brand-name-lastname">Low</span></a>
+      </div>
+            
+      <div class="nav-right">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+            
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i> 
+      </div>
+
+      <div class="dropdown_menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href=".contact.html">Contact</a></li>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="image-container">
+            <img src="./Homepage/Affinity.png" alt="Background Picture">
+            <h1 class="overlay-text">
+                Natalia Low<br>
+                <span class="ux-ui-color">UX/UI</span><br> 
+                Designer
+            </h1>
+            <div class="statement-skills">  
+                <div class="statement">
+                    In my designs I'm after FUNCTION, CONVENIENCE, COMFORT.<br>
+                    BAUHAUS RULES!<br>
+                    As a UX/UI designer, I have a strong background in user research, wireframing and prototyping, and visual design. I am proficient in various design tools including Sketch, Figma, Adobe XD, and InVision. I am passionate about creating designs that are not only aesthetically pleasing but also intuitive and user-friendly.
+                    The projects I worked on include but not limited to social media, measuring tools, cell phone applications for self-control and discipline, foreign language study, etc.
+                    In my work I always make sure to reduce stress and amplify joy from using software applications.
+                </div>
+
+                <div class="skills">
+                    SKILLS: free hand sketching &bull; Figma &bull; Adobe XD &bull;Sketch &bull; Photoshop &bull; Illustrator &bull; UI design &bull; color theory &bull; typography &bull; layout &bull; responsive, adaptive design &bull; HTML &bull; CSS &bull; JavaScript &bull; Python &bull; visual communication &bull; innovative thinking &bull; project management &bull; multitasking abilities &bull; empathy for user needs &bull; qualitative, ethical research practices &bull; quantitative research &bull; data analysis &bull; data protection &bull; user-centric mindset &bull; and other valuable soft and hard skills. 
+                </div>
+            </div>
+        </div>
+
+        
+
+
+<section class="portfolio">
+  <div style="max-width: 80%;">
+    <div>
+      <h2>Projects</h2>
+    </div>
+
+    <div class="projects">
+      <div class="rangefinder">
+        <div>
+          <a href="https://drive.google.com/file/d/1IlcJHdU4_aVPhGNEVEUHZz8hTB31DKKZ/view" target="_blank">
+            <img src="./images/UXRes.jpg" alt="">
+        </a>
+        </div>
+
+        <div>
+          <a href="https://drive.google.com/file/d/1IlcJHdU4_aVPhGNEVEUHZz8hTB31DKKZ/view" target="_blank" class="range-button">
+            <span>UX Research</span><br>
+            coding app for kids
+          </a>
+          
+        </div>
+        
+        
+      </div>
+
+      <div class="rangefinder">
+        <div>
+          <a href="rangefinder-case.html">
+            <img src="./images/Rangefinder-mock-homepage.jpg" alt="">
+        </a>
+        </div>
+
+        <div>
+          <a href="rangefinder-case.html" class="range-button">
+            <span> UX/UI Design </span> <br>
+            measuring tool
+          </a>
+        </div>
+        
+      </div>
+
+      <div class="rangefinder">
+        <div>
+          <a href="crypto-wallet-case.html">
+            <img src="./images/Crypto-wallet.jpg" alt="">
+        </a>
+        </div>
+
+        <div>
+          <a href="crypto-wallet-case.html" class="range-button">
+            <span> UX Design </span> <br>
+            custodial crypto wallet
+          </a>
+        </div>
+      </div>  
+      
+    
+  </div>
+
+  
+</section>
+
+<footer class="footer">
+  <p>Copyright &copy; 2024, Natalia Low</p>
+</footer>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle-btn');
+  const toggleBtnIcon = document.querySelector('.toggle-btn i');
+  const dropDownMenu = document.querySelector('.dropdown_menu');
+
+  toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open');
+    const isOpen = dropDownMenu.classList.contains('open');
+
+    toggleBtnIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  }
+</script>
+
+</body>
+</html>
