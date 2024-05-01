@@ -63,7 +63,7 @@ body, html {
 }
 
 .nav-right a:hover {
-  color: rgb(224, 140, 196);
+  color: rgb(254, 105, 204);
 }
 
 
@@ -76,12 +76,8 @@ body, html {
   padding-right: 40px;
 }
 
-
-
-
-
-
 /* DROPDOWN MENU */
+
 .dropdown_menu {
   display: none;
   position: absolute;
@@ -90,13 +86,19 @@ body, html {
   height: 0;
   width: 200px;
   background: none;
-  background-color: rgba(255, 227, 128, 0.475);
-  backdrop-filter: blur(15px);
+  background-color: rgba(255, 227, 128);
+  
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
   z-index: 600;
+}
+
+@supports (backdrop-filter: blur(15px)) {
+  .dropdown_menu {
+  background-color: rgba(255, 227, 128, 0.475);
+  backdrop-filter: blur(15px);
+}
 }
 
 .dropdown_menu.open {
@@ -120,9 +122,9 @@ body, html {
   font-size: 1rem;
   background-color: none;
   padding: 7px;
-  border-radius: 14px;
-  background-color: #ffe791;
 }
+
+
 
 .background-overlay {
   position: fixed; 
@@ -144,7 +146,10 @@ a {
 }
 
 a:hover {
-  color: rgb(224, 140, 196);
+  color: rgb(254, 105, 204);
+  padding: 7px;
+  border-radius: 14px;
+  background-color: rgb(21, 2, 74);
 }
 
 /*END OF FA-BAR */
