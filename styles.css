@@ -216,26 +216,31 @@ h2 {
 
 .rangefinder img {
   width: 100%;
+  display: block;
 }
+
 
 .range-button {
   display: inline-block;
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  
   font-size: 16px;
   color: rgba(21, 2, 74);
   background-color: rgb(220, 46, 156);
   border: none;
   cursor: pointer;
+  border-radius: 0%;
+  padding: 0;
+  margin-top: 5px;
 }
 
 .range-button span {
   color: #ffcb14;
   font-size: 22px;
   font-weight: bold;
+  
 }
 
 .portfolio {
@@ -510,7 +515,22 @@ h2 {
 
  .overlay-text {
   margin-left: 0;
-  font-size: 32px;
+  font-size: 9vw;
  }
+
+ .range-button {
+ 
+  
+  font-size: 4vw;
+  
+  margin-top: 5px;
+}
+
+.range-button span {
+  color: #ffcb14;
+  font-size: 6vw;
+  font-weight: bold;
+  
+}
 
 }
