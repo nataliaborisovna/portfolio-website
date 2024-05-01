@@ -88,7 +88,7 @@ body, html {
   background: none;
   background-color: rgba(255, 227, 128);
   
-  border-radius: 10px;
+ 
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 600;
@@ -102,7 +102,7 @@ body, html {
 }
 
 .dropdown_menu.open {
-  height: 260px;
+  height: 100vh;
   color: #ffcb14;
   z-index: 600;
   
@@ -145,10 +145,10 @@ a {
   border-radius: 14px;
 }
 
-a:hover {
-  color: rgb(254, 105, 204);
+.dropdown_menu a:hover {
+  color: rgba(255, 227, 128);;
   padding: 7px;
-  border-radius: 14px;
+  border-radius: 0%;
   background-color: rgb(21, 2, 74);
 }
 
