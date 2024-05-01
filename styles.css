@@ -90,6 +90,7 @@ body, html {
   height: 0;
   width: 200px;
   background: none;
+  background-color: rgba(255, 227, 128, 0.475);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -100,7 +101,7 @@ body, html {
 
 .dropdown_menu.open {
   height: 260px;
- color: #ffcb14;
+  color: #ffcb14;
   z-index: 600;
   
 }
@@ -111,8 +112,16 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
- 
-  
+}
+
+.dropdown_menu a {
+  text-decoration: none;
+  color: rgba(21, 2, 74);
+  font-size: 1rem;
+  background-color: none;
+  padding: 7px;
+  border-radius: 14px;
+  background-color: #ffe791;
 }
 
 .background-overlay {
