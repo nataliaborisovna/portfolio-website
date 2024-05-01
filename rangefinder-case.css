@@ -326,9 +326,7 @@ a:hover {
   }
   
   .img-prototype {
-    
     max-width: 70%;
-    
     margin: 0 auto;
   }
   
@@ -339,7 +337,14 @@ a:hover {
     margin-left: 0;
     margin-right: 0;
   }
-  
+  * {
+    box-sizing: border-box;
+  }
+
+  .navbar .toggle-btn {
+    padding-right: 0;
+  }
+
 }
 
 
