@@ -11,12 +11,10 @@ body, html {
 }
 
 .footer {
-  
   text-align: center;
   color: #FFF;
   margin-top: auto;
   width: 100%;
-
 }
 
 .container {
@@ -53,8 +51,6 @@ body, html {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  
-  
 }
 
 .nav-right {
@@ -62,7 +58,6 @@ body, html {
   width: 100%; /* Stretch to the full available width */
   justify-content: flex-end; /* Align links to the right */
   margin-right: 40px;
-
 }
 
 
@@ -78,8 +73,6 @@ body, html {
   color: rgb(224, 140, 196);
 }
 
-
-
 .navbar .toggle-btn {
   color: rgb(224, 140, 196);
   font-size: 1.5rem;
@@ -88,10 +81,9 @@ body, html {
   padding-right: 40px;
 }
 
-
-
-
-
+p {
+  font-size: 15px;
+}
 
 /* DROPDOWN MENU */
 .dropdown_menu {
@@ -102,33 +94,65 @@ body, html {
   height: 0;
   width: 200px;
   background: none;
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
+  background-color: rgba(255, 227, 128);
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
   z-index: 600;
+}
+
+@supports (backdrop-filter: blur(15px)) {
+  .dropdown_menu {
+  background-color: rgba(255, 227, 128, 0.475);
+  backdrop-filter: blur(15px);
+}
 }
 
 .dropdown_menu.open {
-  height: 260px;
-
+  height: 100vh;
+  color: #ffcb14;
   z-index: 600;
-  
 }
 
 .dropdown_menu li {
-  
   padding: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
 }
 
+.dropdown_menu a {
+  text-decoration: none;
+  color: rgba(21, 2, 74);
+  font-size: 1rem;
+  background-color: none;
+  padding: 7px;
+}
 
+.background-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.1); 
+  z-index: 150; 
+}
 
+a {
+  text-decoration: none;
+  color: #ffcb14;
+  font-size: 1rem;
+  background-color: none;
+  padding: 7px;
+  border-radius: 14px;
+}
+
+.dropdown_menu a:hover {
+  color: rgba(255, 227, 128);;
+  padding: 7px;
+  border-radius: 0%;
+  background-color: rgb(21, 2, 74);
+}
 
 /*END OF FA-BAR */
 
@@ -138,14 +162,12 @@ header {
 }
 
 .image-container {
-    
     text-align: left;
 }
 
 .image-container img {
     width: 100%;
-    height: auto;
-    
+    height: auto; 
 }
 
 .overlay-text {
@@ -154,14 +176,18 @@ header {
     left: 20px;
     color: rgb(21, 2, 74);
     font-size: 6vw;
+}
 
+.portfolio h2 {
+  color: rgba(21, 2, 74);
+ }
+ p {
+  color: rgba(21, 2, 74);
 }
 
 .ux-ui-color {
     color: rgb(255, 203, 20);
 }
-
-
 
 .nav-right {
     display: flex; 
@@ -175,6 +201,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  margin-bottom: 4vw;
 }
 
 .rangefinder img {
@@ -186,13 +213,14 @@ h2 {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding-top: 7px;
-  padding-bottom: 7px;
   font-size: 16px;
   color: rgba(21, 2, 74);
   background-color: rgb(220, 46, 156);
   border: none;
   cursor: pointer;
+  border-radius: 0%;
+  padding: 0;
+  margin-top: 5px;
 }
 
 .range-button span {
@@ -202,7 +230,6 @@ h2 {
 }
 
 .portfolio {
-  
   display: flex;
   justify-content: center;
 }
@@ -224,16 +251,13 @@ h2 {
   font-size: 24px; 
   line-height: 30px; 
   text-decoration: none; 
-  
   margin-bottom: 30px;
   z-index: 200;
 }
 
-
 .back-to-top-container {
   display: flex;
   justify-content: center;
-  
 }
 
 #back-to-top:hover {
@@ -249,17 +273,10 @@ a {
   border-radius: 14px;
 }
 
-a:hover {
-  color: rgb(220, 46, 156);
-}
-
 .footer {
-  
   text-align: center;
   color: rgba(21, 2, 74);
   width: 100%;
- 
-  
 }
 
 .parent-container {
@@ -268,22 +285,15 @@ a:hover {
   
 }
 
-
-
 .intro {
   max-width: 400px;
   width: 100%;
   padding: 20px;
 }
    
-
-
-
 .img-prototype {
-  
   max-width: 400px;
   width: 100%;
-
 }
 
 .img-prototype img {
@@ -293,19 +303,9 @@ a:hover {
 }
 
 .objective-container {
-  max-width: 800px; 
   width: 100%;
-  margin: 0 auto; /* Centering */
- 
-  
+  margin: 0 auto; 
 }
-
-
-
-
-
-
-
 
 #back-to-top {
   display: inline-block; 
@@ -342,8 +342,7 @@ a:hover {
 @media only screen and (max-width: 1110px) {
   
 p {
-  font-size: 1.5vw;
-
+  font-size: 14px;
 }
       
   } 
@@ -386,7 +385,7 @@ p {
   }
 
   p {
-    font-size: 2.5vh;
+    font-size: 13px;
   }
 
 }
@@ -432,6 +431,14 @@ p {
     font-size: 12px;
   }
 
+  
+
+  p {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3vw;
+  }
+
 }
 
 @media only screen and (max-width: 492px) {
@@ -448,8 +455,8 @@ p {
   }
 
   .portfolio {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .statement-skills {
@@ -470,12 +477,8 @@ p {
 
  .footer p {
     font-size: 12px;
+    margin-top: 5%;
   }
-
-  body, html {
-    
-    background-color: rgba(21, 2, 74);
-}
 
 }
 
