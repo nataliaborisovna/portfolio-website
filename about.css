@@ -53,8 +53,6 @@ body, html {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  
-  
 }
 
 .nav-right {
@@ -62,9 +60,7 @@ body, html {
   width: 100%; /* Stretch to the full available width */
   justify-content: flex-end; /* Align links to the right */
   margin-right: 40px;
-
 }
-
 
 .nav-right a {
   margin-left: 20px;
@@ -78,8 +74,6 @@ body, html {
   color: rgb(224, 140, 196);
 }
 
-
-
 .navbar .toggle-btn {
   color: rgb(224, 140, 196);
   font-size: 1.5rem;
@@ -87,11 +81,6 @@ body, html {
   display: none;
   padding-right: 40px;
 }
-
-
-
-
-
 
 /* DROPDOWN MENU */
 .dropdown_menu {
@@ -106,29 +95,20 @@ body, html {
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
   z-index: 600;
 }
 
 .dropdown_menu.open {
   height: 260px;
-
   z-index: 600;
-  
 }
 
 .dropdown_menu li {
-  
   padding: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
 }
-
-
-
 
 /*END OF FA-BAR */
 
@@ -138,30 +118,13 @@ header {
 }
 
 .image-container {
-    
     text-align: left;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
-    
 }
-
-.overlay-text {
-    position: absolute;
-    top: 50px; /* Adjust if needed to align with the header */
-    left: 20px;
-    color: rgb(21, 2, 74);
-    font-size: 6vw;
-
-}
-
-.ux-ui-color {
-    color: rgb(255, 203, 20);
-}
-
-
 
 .nav-right {
     display: flex; 
@@ -202,10 +165,10 @@ h2 {
 }
 
 .portfolio {
-  
   display: flex;
   justify-content: center;
 }
+
 .toggle-btn {
   display: none; /* Hide toggle button by default */
 }
@@ -224,11 +187,9 @@ h2 {
   font-size: 24px; 
   line-height: 30px; 
   text-decoration: none; 
-  
   margin-bottom: 30px;
   z-index: 200;
 }
-
 
 .back-to-top-container {
   display: flex;
@@ -254,12 +215,13 @@ a:hover {
 }
 
 .footer {
-  
   text-align: center;
   color: rgba(21, 2, 74);
   width: 100%;
- 
-  
+}
+
+p {
+  color: rgba(21, 2, 74);
 }
 
 .parent-container {
@@ -268,22 +230,15 @@ a:hover {
   
 }
 
-
-
 .intro {
   max-width: 400px;
   width: 100%;
   padding: 20px;
 }
    
-
-
-
 .img-prototype {
-  
   max-width: 400px;
   width: 100%;
-
 }
 
 .img-prototype img {
@@ -296,16 +251,7 @@ a:hover {
   max-width: 800px; 
   width: 100%;
   margin: 0 auto; /* Centering */
- 
-  
 }
-
-
-
-
-
-
-
 
 #back-to-top {
   display: inline-block; 
@@ -343,9 +289,7 @@ a:hover {
   
 p {
   font-size: 1.5vw;
-
-}
-      
+} 
   } 
 
 @media only screen and (max-width: 830px) {
