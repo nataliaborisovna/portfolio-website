@@ -135,6 +135,11 @@ a {
   border-radius: 14px;
 }
 
+.overview-content a {
+  color: rgba(21, 2, 74);
+  text-decoration: underline;
+}
+
 .dropdown_menu a:hover {
   color: rgba(255, 227, 128);
   padding: 7px;
@@ -369,6 +374,10 @@ a:hover {
     padding-right: 0;
   }
 
+  .dropdown_menu {
+    
+    right: 0;
+  }
 }
 
 
